@@ -29,20 +29,22 @@ O aplicativo utiliza uma API REST simulada (JSON Server) para persistência dos 
 
 A estrutura do projeto segue a convenção comum de aplicações React Native, separando componentes, serviços e telas:
 
+```
 .
 ├── src/
 │   ├── componentes/
-│   │   ├── CardInfo.js         # Componente para exibição de dados estatísticos.
+│   │   ├── CardInfo.js         # Card para exibição de dados estatísticos/informativos.
 │   │   ├── EstudanteItem.js    # Componente de card para cada estudante na lista.
 │   │   └── FabBotao.js         # Botão flutuante para adicionar novo estudante.
 │   ├── servicos/
-│   │   └── api.js              # Configuração da URL base da API.
+│   │   └── api.js              # Configuração da URL base da API (http://localhost:3000).
 │   └── telas/
-│       ├── TelaEstatistica.js  # Exibe dados estatísticos e o gráfico.
-│       ├── TelaEstudanteForm.js# Formulário para cadastro e edição de estudantes.
-│       ├── TelaHome.js         # Tela principal com a lista de estudantes (R e D do CRUD).
-│       └── TelaSobre.js        # Informações sobre o aplicativo e requisitos atendidos.
+│       ├── TelaEstatistica.js  # Exibe dados estatísticos e gráficos.
+│       ├── TelaEstudanteForm.js# Formulário para cadastro e edição (CRUD: C e U).
+│       ├── TelaHome.js         # Tela principal com a lista de estudantes (CRUD: R e D).
+│       └── TelaSobre.js        # Informações sobre o aplicativo e requisitos.
 └── App.js                      # Configuração da navegação principal (Bottom Tabs).
+```
 
 ## ⚙️ Como Executar o Projeto
 
